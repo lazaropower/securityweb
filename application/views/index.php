@@ -22,25 +22,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
+                    <a class="nav-link" href="#routerfinder">Find your router</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="services.html">Services</a>
+                    <a class="nav-link" href="guide.pdf">Guide</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="team.html">Team</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="price.html">Prices</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="faq.html">FAQ's</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
+                    <a class="nav-link" href="#team">Team</a>
                 </li>
             </ul>
         </div>
@@ -82,11 +73,11 @@
 </section>
 
 <!-- Info block 1 -->
-<section class="info-section">
+<section class="info-section" id="routerfinder">
     <div class="container">
         <div class="head-box text-center mb-5">
-            <h2>Who We Are</h2>
-            <h6 class="text-underline-primary">This is information panel</h6>
+            <h2>Find your router</h2>
+            <h6 class="text-underline-primary">Take the survey</h6>
         </div>
         <div class="three-panel-block mt-5">
             <div class="row">
@@ -137,47 +128,9 @@
     </div>
 </section>
 
-<!-- Info block 1 -->
-<section class="info-section bg-primary py-0">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-6 col-lg-6 content-half mt-md-0 pl-5 pt-4">
-                <div class="head-box mb-5 pl-5 mt-2">
-                    <h2 class="text-white">Our Story</h2>
-                    <h6 class="text-white text-underline-rb-white">This is information panel</h6>
-                </div>
-                <ul class="pl-5">
-                    <li>
-                        <i class="fa fa-laptop box-round-outline" aria-hidden="true"></i>
-                        <span class="list-content">
-                    		<strong>Responsive Design</strong>
-                    		<br>Eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    	</span>
-                    </li>
-                    <li>
-                        <i class="fa fa-cloud-upload box-round-outline" aria-hidden="true"></i>
-                        <span class="list-content">
-                    		<strong>Cloud Storage</strong>
-                    		<br>Eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    	</span>
-                    </li>
-                    <li>
-                        <i class="fa fa-diamond box-round-outline" aria-hidden="true"></i>
-                        <span class="list-content">
-                    		<strong>Premium Features</strong>
-                    		<br>Eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    	</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-6 p-0 m-0">
-                <img src="public/img/intro-bg.jpg" class="img-fluid">
-            </div>
-        </div>
-</section>
 
 <!-- team style 1 -->
-<section class="team-section py-5">
+<section class="team-section py-5" id="team">
     <div class="container">
         <div class="row mb-5">
             <div class="head-box text-center mb-5 col-md-12">
@@ -230,120 +183,6 @@
     </div>
 </section>
 
-<!-- Widget 1 -->
-<!--
-<section class="widget py-3 bg-primary">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-md-8 col-sm-12 text-sm-center text-md-left text-white pt-3">
-                <h2>Subscribe Newsletter</h2>
-                <p>The will to win, the desire to succeed, the urge to reach your full potential... these are the keys that will unlock the door to personal excellence.</p>
-            </div>
-            <div class="col-md-4 col-lg-3 col-sm-12 text-sm-center text-md-right copy-container">
-                <div class="copy-content">
-                    <a href="#" class="btn btn-dark btn-capsul px-5 py-3">Subscribe Now</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
--->
-
-<!-- Testimonial Block 04-->
-<!--
-<section class="testimonial-section py-5">
-    <div class="container">
-        <div class="row">
-            <div class="head-box text-center mb-3 col-md-12">
-                <h2>Client Testimonials</h2>
-                <h6 class="text-underline-primary mb-5 pb-1">What people says about us.</h6>
-            </div>
-            <div class="col-md-4 mb-sm-4 mb-md-0 pb-5">
-                <div class="card block-style-03">
-                    <div class="card-body">
-                        <p class="text-center"><img class="img-fluid rounded-circle" src="public/img/t-member-06.jpg" alt="Generic placeholder image"></p>
-                        <p class="text-center mb-1"><i class="fa fa-quote-left fa-2x text-primary" aria-hidden="true"></i></p>
-                        <p class="card-text text-center">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                    </div>
-                    <div class="card-footer bg-primary">
-                        <div class="media text-center text-white">
-                            <div class="media-body">
-                                <h5 class="mt-2 mb-0">Allison A</h5>
-                                <p>-United States</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-sm-4 mb-md-0 pb-5">
-                <div class="card block-style-03">
-                    <div class="card-body">
-                        <p class="text-center"><img class="img-fluid rounded-circle" src="public/img/t-member-05.jpg" alt="Generic placeholder image"></p>
-                        <p class="text-center mb-1"><i class="fa fa-quote-left fa-2x text-primary" aria-hidden="true"></i></p>
-                        <p class="card-text text-center">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                    </div>
-                    <div class="card-footer bg-primary">
-                        <div class="media text-center text-white">
-                            <div class="media-body">
-                                <h5 class="mt-2 mb-0">Julian Powell</h5>
-                                <p>-United States</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 pb-5">
-                <div class="card block-style-03">
-                    <div class="card-body">
-                        <p class="text-center"><img class="img-fluid rounded-circle" src="public/img/t-member-04.jpg" alt="Generic placeholder image"></p>
-                        <p class="text-center mb-1"><i class="fa fa-quote-left fa-2x text-primary" aria-hidden="true"></i></p>
-                        <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                    </div>
-                    <div class="card-footer bg-primary">
-                        <div class="media text-center text-white">
-                            <div class="media-body">
-                                <h5 class="mt-2 mb-0">Kylie Barnes</h5>
-                                <p>-United States</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
--->
-
-<!-- Info block 6 -->
-<section class="info-section bg-light py-4">
-    <div class="container">
-        <div class="three-panel-block text-dark">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="service-block text-left px-lg-5 px-md-0">
-                        <i class="fa fa-laptop box-circle-outline mb-3" aria-hidden="true"></i>
-                        <h3>Responsive Design</h3>
-                        <p>Never in all their history have men been able truly to conceive of the world as one a single sphere</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="service-block text-left px-lg-5 px-md-0">
-                        <i class="fa fa-cloud-upload box-circle-outline mb-3" aria-hidden="true"></i>
-                        <h3>Cloud Storage</h3>
-                        <p>Never in all their history have men been able truly to conceive of the world as one a single sphere</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="service-block text-left px-lg-5 px-md-0">
-                        <i class="fa fa-diamond box-circle-outline mb-3" aria-hidden="true"></i>
-                        <h3>Premium Features</h3>
-                        <p>Never in all their history have men been able truly to conceive of the world as one a single sphere</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
 <!-- Footer Block 1 -->
 <section class="footer-section bg-dark pt-5">
