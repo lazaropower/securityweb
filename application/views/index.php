@@ -28,7 +28,7 @@
                     <a class="nav-link" href="#routerfinder">Find your router</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="guide.pdf">Guide</a>
+                    <a class="nav-link" href="public/pdf/guide.pdf">Guide</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#team">Team</a>
