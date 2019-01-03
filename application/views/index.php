@@ -15,14 +15,15 @@
 <nav class="navbar navbar-expand-md fixed-top top-nav">
     <div class="container">
         <a class="navbar-brand" href="index.html"><strong>Find your Router</strong></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href=".">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#routerfinder">Find your router</a>
@@ -49,15 +50,18 @@
             <img class="d-block img-fluid" alt="First slide" src="public/img/intro-bg-01.jpg">
             <div class="carousel-caption ">
                 <h2 class="display-4 text-white mb-2 mt-4">Are you looking for a Router?</h2>
-                <p class="text-white mb-3 px-5 lead">We help you to find the best solution for your home or enterprise. </p>
+                <p class="text-white mb-3 px-5 lead">We help you to find the best solution for your home or
+                    enterprise. </p>
                 <!-- <a href="#" class="btn btn-primary btn-capsul px-4 py-2">Explore More</a> -->
             </div>
         </div>
         <div class="carousel-item">
             <img class="d-block img-fluid" alt="First slide" src="public/img/intro-bg-02.jpg">
             <div class="carousel-caption ">
-                <h2 class="display-4 text-white mb-2 mt-4">You select the features and we select the best router for you.</h2>
-                <p class="text-white mb-3 px-5 lead">Our system is able to find between a lot of routers according to your needs.</p>
+                <h2 class="display-4 text-white mb-2 mt-4">You select the features and we select the best router for
+                    you.</h2>
+                <p class="text-white mb-3 px-5 lead">Our system is able to find between a lot of routers according to
+                    your needs.</p>
                 <!-- <a href="#" class="btn btn-primary btn-capsul px-4 py-2">Explore More</a> -->
             </div>
         </div>
@@ -79,49 +83,74 @@
             <h2>Find your router</h2>
             <h6 class="text-underline-primary">Take the survey</h6>
         </div>
-        <div class="three-panel-block mt-5">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="service-block-overlay text-center mb-5 p-lg-3">
-                        <i class="fa fa-laptop box-circle-solid mt-3 mb-3" aria-hidden="true"></i>
-                        <h3>Responsive Design</h3>
-                        <p class="px-4">Never in all their history have men been able truly to conceive of the world as one a single sphere</p>
-                    </div>
+        <!-- Form for entering router features -->
+        <form id="router-form">
+            <div class="form-group">
+                <label for="price">Maximum price in USD</label>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#priceModal">
+                    More info
+                </button>
+                <input type="number" class="form-control" id="max-price">
+            </div>
+            <div class="form-group">
+                <label for="price">Number of bands</label>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#bandsModal">
+                    More info
+                </button>
+                <select class="form-control" id="bandsSelect">
+                    <option>1 (2.4 Ghz)</option>
+                    <option>2 (2.4 GHz + 5 Ghz)</option>
+                    <option>3 (2.5 Ghz + 2 * 5 GHz)</option>
+                </select>
+            </div>
+
+
+        </form>
+    </div>
+</section>
+
+<!-- Modals -->
+<section id="modals">
+    <!-- Price Modal -->
+    <div class="modal fade" id="priceModal" tabindex="-1" role="dialog"
+         aria-labelledby="priceModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="priceModalLabel">Maximum price</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="service-block-overlay text-center mb-5 p-lg-3">
-                        <i class="fa fa-calendar box-circle-solid mt-3 mb-3" aria-hidden="true"></i>
-                        <h3>Integrated Calendar</h3>
-                        <p class="px-4">Never in all their history have men been able truly to conceive of the world as one a single sphere</p>
-                    </div>
+                <div class="modal-body">
+                    <p>Here you define the maximum price you are willing to pay for your new router. All the
+                        suggested routers will cost that or less. Take into account that if you set a price
+                        that is too small, you may not find any router fitting your needs.</p>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="service-block-overlay text-center mb-5 p-lg-3">
-                        <i class="fa fa-bug box-circle-solid mt-3 mb-3" aria-hidden="true"></i>
-                        <h3>Bug Free Solutions</h3>
-                        <p class="px-4">Never in all their history have men been able truly to conceive of the world as one a single sphere</p>
-                    </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="service-block-overlay text-center p-lg-3">
-                        <i class="fa fa-cloud-upload box-circle-solid mt-3 mb-3" aria-hidden="true"></i>
-                        <h3>Cloud Storage</h3>
-                        <p class="px-4">Never in all their history have men been able truly to conceive of the world as one a single sphere</p>
-                    </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bands Modal -->
+    <div class="modal fade" id="bandsModal" tabindex="-1" role="dialog"
+         aria-labelledby="bandsModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="bandsModalLabel">Minimum number of bands</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="service-block-overlay text-center p-lg-3">
-                        <i class="fa fa-diamond box-circle-solid mt-3 mb-3" aria-hidden="true"></i>
-                        <h3>Premium Features</h3>
-                        <p class="px-4">Never in all their history have men been able truly to conceive of the world as one a single sphere</p>
-                    </div>
+                <div class="modal-body">
+                    <p>TODO: Explain briefly what are bands. </p>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="service-block-overlay text-center p-lg-3">
-                        <i class="fa fa-comments box-circle-solid mt-3 mb-3" aria-hidden="true"></i>
-                        <h3>24/7 Support</h3>
-                        <p class="px-4">Never in all their history have men been able truly to conceive of the world as one a single sphere</p>
-                    </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
@@ -216,7 +245,8 @@
                     <div class="col-md-12">
                         <div class="about-box text-white">
                             <h5 class="mb-3">About Company</h5>
-                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat.</p>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -244,13 +274,15 @@
     </div>
     <div class="copy-footer bg-primary py-2 mt-4">
         <div class="container text-center text-light">
-            &copy; Security of Information Systems.</a> <span id="year"></span>. Created by Lázaro Amor with <i class="fa fa-heart"></i>
+            &copy; Security of Information Systems.</a> <span id="year"></span>. Created by Lázaro Amor with <i
+                    class="fa fa-heart"></i>
         </div>
     </div>
 </section>
 
 <!-- Javascript Files  -->
-<script  src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="public/js/bootstrap.min.js"></script>
 <script src="public/js/core.js"></script>
 </body>
