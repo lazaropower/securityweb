@@ -4,17 +4,17 @@
     <title>Find your Router</title>
 </head>
 <!-- bootstrap Style CSS File -->
-<link rel="stylesheet" href="public/css/bootstrap.min.css">
+<link rel="stylesheet" href="../../../public/css/bootstrap.min.css">
 <!-- Custom Style CSS File -->
-<link rel="stylesheet" type="text/css" href="public/css/custom-style.css">
+<link rel="stylesheet" type="text/css" href="../../../public/css/custom-style.css">
 <!-- Font-Awesome Style CSS File -->
-<link rel="stylesheet" type="text/css" href="public/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="../../../public/font-awesome/css/font-awesome.min.css">
 <body>
 
 <!-- Top navigation -->
 <nav class="navbar navbar-expand-md fixed-top top-nav">
     <div class="container">
-        <a class="navbar-brand" href="index.html"><strong>Find your Router</strong></a>
+        <a class="navbar-brand" href="../index.html"><strong>Find your Router</strong></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
@@ -23,13 +23,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href=".">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="..">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#routerfinder">Find your router</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="public/pdf/guide.pdf">Guide</a>
+                    <a class="nav-link" href="../../../public/pdf/guide.pdf">Guide</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#team">Team</a>
@@ -47,7 +47,7 @@
     </ol>
     <div class="carousel-inner" role="listbox">
         <div class="carousel-item active">
-            <img class="d-block img-fluid" alt="First slide" src="public/img/intro-bg-01.jpg">
+            <img class="d-block img-fluid" alt="First slide" src="../../../public/img/intro-bg-01.jpg">
             <div class="carousel-caption ">
                 <h2 class="display-4 text-white mb-2 mt-4">Are you looking for a Router?</h2>
                 <p class="text-white mb-3 px-5 lead">We help you to find the best solution for your home or
@@ -56,7 +56,7 @@
             </div>
         </div>
         <div class="carousel-item">
-            <img class="d-block img-fluid" alt="First slide" src="public/img/intro-bg-02.jpg">
+            <img class="d-block img-fluid" alt="First slide" src="../../../public/img/intro-bg-02.jpg">
             <div class="carousel-caption ">
                 <h2 class="display-4 text-white mb-2 mt-4">You select the features and we select the best router for
                     you.</h2>
@@ -168,7 +168,7 @@
             </div>
             <div class="col-md-4 mb-md-0 mb-sm-4">
                 <div class="member-box anim-lf t-bottom">
-                    <img class="img-fluid" src="public/img/lazaro.jpg" alt="">
+                    <img class="img-fluid" src="../../../public/img/lazaro.jpg" alt="">
                     <div class="overlay-content">
                         <h3 class="text-white ml-3 my-0">Lázaro Amor</h3>
                         <p class="text-white ml-3 mb-3">Developer</p>
@@ -182,7 +182,7 @@
             </div>
             <div class="col-md-4 mb-md-0 mb-sm-4">
                 <div class="member-box anim-lf t-bottom">
-                    <img class="img-fluid" src="public/img/angel.jpg" alt="">
+                    <img class="img-fluid" src="../../../public/img/angel.jpg" alt="">
                     <div class="overlay-content">
                         <h3 class="text-white ml-3 my-0">Ángel del Castillo</h3>
                         <p class="text-white ml-3 mb-3">Developer</p>
@@ -196,7 +196,7 @@
             </div>
             <div class="col-md-4 mb-md-0 mb-sm-4">
                 <div class="member-box anim-lf t-bottom">
-                    <img class="img-fluid" src="public/img/thomas.jpg" alt="">
+                    <img class="img-fluid" src="../../../public/img/thomas.jpg" alt="">
                     <div class="overlay-content">
                         <h3 class="text-white ml-3 my-0">Thomas Bobillot</h3>
                         <p class="text-white ml-3 mb-3">Developer</p>
@@ -283,7 +283,7 @@
 <!-- Javascript Files  -->
 <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-<script src="public/js/bootstrap.min.js"></script>
-<script src="public/js/core.js"></script>
+<script src="../../../public/js/bootstrap.min.js"></script>
+<script src="../../../public/js/core.js"></script>
 </body>
 </html>
