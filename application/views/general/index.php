@@ -63,7 +63,7 @@
     </a>
 </section>
 
-<!-- Info block 1 -->
+<!-- THE FORM -->
 <section class="info-section" id="routerfinder">
     <div class="container">
         <div class="head-box text-center mb-5">
@@ -72,6 +72,8 @@
         </div>
         <!-- Form for entering router features -->
         <form id="router-form">
+            
+            <!-- Price (number input. TODO: convert to sliding control, elegant and no need to check the format) -->
             <div class="form-group">
                 <label for="price">Maximum price in USD</label>
                 <!-- Button trigger modal -->
@@ -80,8 +82,10 @@
                 </button>
                 <input type="number" class="form-control" id="max-price">
             </div>
+            
+            <!-- Bands (3 options) -->
             <div class="form-group">
-                <label for="price">Number of bands</label>
+                <label for="bands">Number of bands</label>
                 <!-- Button trigger modal -->
                 <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#bandsModal">
                     More info
@@ -92,13 +96,52 @@
                     <option>3 (2.5 Ghz + 2 * 5 GHz)</option>
                 </select>
             </div>
+            
+            <!-- Minimum number of antennas -->
+            <div class="form-group">
+                <label for="antennas">Minimum number of antennas</label>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#antennasModal">
+                    More info
+                </button>
+                <select class="form-control" id="antennasSelect">
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            </div>
+
+            <!-- Minimum number of LAN ports -->
+            <div class="form-group">
+                <label for="ports">Minimum number of LAN ports</label>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#portssModal">
+                    More info
+                </button>
+                <select class="form-control" id="portsSelect">
+                    <option>3</option>
+                    <option>4</option>
+                    <option>6</option>
+                    <option>8</option>
+                </select>
+            </div>
+
+            <!-- MAC ACLs (yes/no) -->
+            
+
+            <!-- MU-MIMO (yes/no) -->
+            
+
+            <!-- RADIUS (yes/no) -->
+
+            
 
 
         </form>
     </div>
 </section>
-
-<!-- Modals -->
+<!-- ------- -->
+<!-- Modals (what appears after clicking -->
 <section id="modals">
     <!-- Price Modal -->
     <div class="modal fade" id="priceModal" tabindex="-1" role="dialog"
