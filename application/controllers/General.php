@@ -1,5 +1,4 @@
-<?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+<?php defined('BASEPATH') OR exit('No direct script access allowed');
 
 class General extends CI_Controller {
 
@@ -9,6 +8,7 @@ class General extends CI_Controller {
         //Helpers
         $this->load->helper('url');
         //Libraries
+        //$this->load->library("Bbdd");
         $this->load->library('parser');
 
         $data = array ('url' => base_url());
@@ -21,6 +21,15 @@ class General extends CI_Controller {
         $data = array ('url' => base_url());
 	    $this->parser->parse('general/index', $data);
 	}
+
+	public function example()
+    {
+        $i = 0;
+        for($i < 3; $i++;){
+            $name = Bbdd::getRowWhere('test', $i);
+            echo $name;
+        }
+    }
 
     function _output($output){
         $data = array ('url' => base_url());
