@@ -72,7 +72,7 @@
         </div>
         <!-- Form for entering router features -->
         <form id="router-form">
-            
+
             <!-- Price (number input. TODO: convert to sliding control, elegant and no need to check the format) -->
             <div class="form-group">
                 <label for="price">Maximum price in USD</label>
@@ -82,7 +82,7 @@
                 </button>
                 <input type="number" class="form-control" id="max-price">
             </div>
-            
+
             <!-- Bands (3 options) -->
             <div class="form-group">
                 <label for="bands">Number of bands</label>
@@ -96,7 +96,7 @@
                     <option>3 (2.5 Ghz + 2 * 5 GHz)</option>
                 </select>
             </div>
-            
+
             <!-- Minimum number of antennas -->
             <div class="form-group">
                 <label for="antennas">Minimum number of antennas</label>
@@ -115,7 +115,7 @@
             <div class="form-group">
                 <label for="ports">Minimum number of LAN ports</label>
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#portssModal">
+                <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#portsModal">
                     More info
                 </button>
                 <select class="form-control" id="portsSelect">
@@ -127,15 +127,73 @@
             </div>
 
             <!-- MAC ACLs (yes/no) -->
-            
+            <div class="form-group">
+                <label for="ports">MAC addresses access control list</label>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#MacAclModal">
+                    More info
+                </button>
+                <!-- Yes/no checks -->
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="MacAclRadios" id="MacAclRadios1" value="yes"
+                           checked>
+                    <label class="form-check-label" for="MacAclRadios1">
+                        Yes
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="MacAclRadios" id="MacAclRadios2" value="no">
+                    <label class="form-check-label" for="MacAclRadios2">
+                        No
+                    </label>
+                </div>
+            </div>
 
             <!-- MU-MIMO (yes/no) -->
-            
+            <div class="form-group">
+                <label for="ports">MU-MIMO</label>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#MuMimoModal">
+                    More info
+                </button>
+                <!-- Yes/no checks -->
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="MuMimoRadios" id="MuMimoRadios1" value="yes"
+                           checked>
+                    <label class="form-check-label" for="MuMimoRadios1">
+                        Yes
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="MuMimoRadios" id="MuMimoRadios2" value="no">
+                    <label class="form-check-label" for="MuMimoRadios2">
+                        No
+                    </label>
+                </div>
+            </div>
 
             <!-- RADIUS (yes/no) -->
-
-            
-
+            <div class="form-group">
+                <label for="ports">RADIUS server</label>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#RadiusModal">
+                    More info
+                </button>
+                <!-- Yes/no checks -->
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="RadiusRadios" id="RadiusRadios1" value="yes"
+                           checked>
+                    <label class="form-check-label" for="RadiusRadios1">
+                        Yes
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="RadiusRadios" id="RadiusRadios2" value="no">
+                    <label class="form-check-label" for="RadiusRadios2">
+                        No
+                    </label>
+                </div>
+            </div>
 
         </form>
     </div>
