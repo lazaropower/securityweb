@@ -1,7 +1,7 @@
 <!-- Top navigation -->
 <nav class="navbar navbar-expand-md fixed-top top-nav">
     <div class="container">
-        <a class="navbar-brand" href="{url}index.html"><strong>Find your Router</strong></a>
+        <a class="navbar-brand" href="{url}"><strong>Find your Router</strong></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
@@ -10,7 +10,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="{url}general/index">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="{url}">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#routerfinder">Find your router</a>
@@ -201,7 +201,7 @@
 <!-- ------- -->
 <!-- Modals (what appears after clicking -->
 <section id="modals">
-    <!-- Price Modal -->
+    <!-- Price -->
     <div class="modal fade" id="priceModal" tabindex="-1" role="dialog"
          aria-labelledby="priceModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -223,7 +223,7 @@
             </div>
         </div>
     </div>
-    <!-- Bands Modal -->
+    <!-- Bands -->
     <div class="modal fade" id="bandsModal" tabindex="-1" role="dialog"
          aria-labelledby="bandsModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -243,9 +243,118 @@
             </div>
         </div>
     </div>
+    <!-- Antennas -->
+    <div class="modal fade" id="antennasModal" tabindex="-1" role="dialog"
+         aria-labelledby="antennasModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="antennasModalLabel">Minimum number of antennas</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>TODO. </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- LAN ports -->
+    <div class="modal fade" id="portsModal" tabindex="-1" role="dialog"
+         aria-labelledby="PortsModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="PortsModalLabel">Minimum number of LAN ports</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>TODO. </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MAC ACL -->
+    <div class="modal fade" id="MacAclModal" tabindex="-1" role="dialog"
+         aria-labelledby="MacAclModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="MacAclModalLabel">MAC addresses control access list</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>TODO. </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MU-MIMO -->
+    <div class="modal fade" id="MuMimoModal" tabindex="-1" role="dialog"
+         aria-labelledby="MuMimoModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="MuMimoModalLabel">MU-MIMO</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>TODO. </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- RADIUS server -->
+    <div class="modal fade" id="RadiusModal" tabindex="-1" role="dialog"
+         aria-labelledby="RadiusModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="RadiusModalLabel">RADIUS server</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>TODO. </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
 </section>
 
 
+
+
+<!---------------------->
 <!-- team style 1 -->
 <section class="team-section py-5" id="team">
     <div class="container">
