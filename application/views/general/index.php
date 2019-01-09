@@ -71,7 +71,7 @@
             <h6 class="text-underline-primary">Take the survey</h6>
         </div>
         <!-- Form for entering router features -->
-        <form id="router-form">
+        <form id="router-form" action="{url}general/check" method="POST">
 
             <!-- Price (number input. TODO: convert to sliding control, elegant and no need to check the format) -->
             <div class="form-group">
@@ -80,7 +80,28 @@
                 <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#priceModal">
                     More info
                 </button>
-                <input type="number" class="form-control" id="max-price">
+                <input type="number" class="form-control" name="price" placeholder="Enter a price">
+            </div>
+
+            <!-- Brand (9 options) -->
+            <div class="form-group">
+                <label for="model">Number of bands</label>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#brandModal">
+                    More info
+                </button>
+                <select class="form-control" name="brandSelect">
+                    <option disabled selected hidden>Select the brand</option>
+                    <option>Asus</option>
+                    <option>Netgear</option>
+                    <option>D-Link</option>
+                    <option>TP-Link</option>
+                    <option>Linksys</option>
+                    <option>Trendnet</option>
+                    <option>Jetstream</option>
+                    <option>Phicomm</option>
+                    <otion>Razer</otion>
+                </select>
             </div>
 
             <!-- Bands (3 options) -->
@@ -90,7 +111,8 @@
                 <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#bandsModal">
                     More info
                 </button>
-                <select class="form-control" id="bandsSelect">
+                <select class="form-control" name="bandsSelect">
+                    <option disabled selected hidden>Select the band</option>
                     <option>1 (2.4 Ghz)</option>
                     <option>2 (2.4 GHz + 5 Ghz)</option>
                     <option>3 (2.5 Ghz + 2 * 5 GHz)</option>
@@ -104,7 +126,8 @@
                 <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#antennasModal">
                     More info
                 </button>
-                <select class="form-control" id="antennasSelect">
+                <select class="form-control" name="antennasSelect">
+                    <option disabled selected hidden>Select a number</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
@@ -118,7 +141,8 @@
                 <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#portsModal">
                     More info
                 </button>
-                <select class="form-control" id="portsSelect">
+                <select class="form-control" name="portsSelect">
+                    <option disabled selected hidden>Select a number</option>
                     <option>3</option>
                     <option>4</option>
                     <option>6</option>
@@ -135,14 +159,14 @@
                 </button>
                 <!-- Yes/no checks -->
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="MacAclRadios" id="MacAclRadios1" value="yes"
+                    <input class="form-check-input" type="radio" name="macAclRadios" id="MacAclRadios1" value="yes"
                            checked>
                     <label class="form-check-label" for="MacAclRadios1">
                         Yes
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="MacAclRadios" id="MacAclRadios2" value="no">
+                    <input class="form-check-input" type="radio" name="macAclRadios" id="MacAclRadios2" value="no">
                     <label class="form-check-label" for="MacAclRadios2">
                         No
                     </label>
@@ -158,14 +182,14 @@
                 </button>
                 <!-- Yes/no checks -->
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="MuMimoRadios" id="MuMimoRadios1" value="yes"
+                    <input class="form-check-input" type="radio" name="muMimoRadios" id="MuMimoRadios1" value="yes"
                            checked>
                     <label class="form-check-label" for="MuMimoRadios1">
                         Yes
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="MuMimoRadios" id="MuMimoRadios2" value="no">
+                    <input class="form-check-input" type="radio" name="muMimoRadios" id="MuMimoRadios2" value="no">
                     <label class="form-check-label" for="MuMimoRadios2">
                         No
                     </label>
@@ -181,7 +205,7 @@
                 </button>
                 <!-- Yes/no checks -->
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="RadiusRadios" id="RadiusRadios1" value="yes"
+                    <input class="form-check-input" type="radio" name="radiusRadios" id="RadiusRadios1" value="yes"
                            checked>
                     <label class="form-check-label" for="RadiusRadios1">
                         Yes
@@ -194,8 +218,11 @@
                     </label>
                 </div>
             </div>
-
         </form>
+    </div>
+    <!-- Submit Button -->
+    <div class="text-center">
+        <button type="submit" form="router-form" value="submit" class="btn btn-primary btn-lg">Submit</button>
     </div>
 </section>
 <!-- ------- -->

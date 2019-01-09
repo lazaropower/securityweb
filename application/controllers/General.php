@@ -22,6 +22,12 @@ class General extends CI_Controller {
 	    $this->parser->parse('general/index', $data);
 	}
 
+    public function check()
+    {
+        $results = $_POST;
+        var_dump($results);
+    }
+
 	public function example()
     {
         for ($i = 1; $i <= 5; $i++){
@@ -32,7 +38,7 @@ class General extends CI_Controller {
     }
 
 
-    function _output($output){
+   function _output($output){
         $data = array ('url' => base_url());
         echo $output.$this->parser->parse('footer', $data, true) . "</body></html>";
     }
