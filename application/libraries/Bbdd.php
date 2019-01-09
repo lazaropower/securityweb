@@ -7,7 +7,7 @@ class Bbdd
     public function __construct()
     {
         $this->CI =& get_instance();
-        $this->CI->load->library('database');
+        $this->CI->load->database();
     }
 
     public function getTable($table)
@@ -17,6 +17,6 @@ class Bbdd
 
     public function getRowWhereId($table, $id)
     {
-        return $this->CI->db->where('id', $id)->get($table)->result();
+        return $this->CI->db->where('id', $id)->get($table)->row();
     }
 }
