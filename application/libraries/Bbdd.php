@@ -19,4 +19,9 @@ class Bbdd
     {
         return $this->CI->db->where('id', $id)->get($table)->row();
     }
+
+    public function getRowsWhere($table, $array)
+    {
+        return $this->CI->db->where($array)->get($table)->result();
+    }
 }
