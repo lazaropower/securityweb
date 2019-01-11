@@ -10,6 +10,7 @@ class General extends CI_Controller {
         //Libraries
         $this->load->library('Bbdd');
         $this->load->library('parser');
+        $this->load->library('session');
 
         $data = array ('url' => base_url());
         $this->parser->parse('header', $data);
@@ -84,28 +85,41 @@ class General extends CI_Controller {
         return $array;
     }
 
-    public function search()
+    public function search($id = false)
     {
-        $array = $this->validateForm($_POST);
+        if (!$id) {
+            $array = $this->validateForm($_POST);
 
-        //We select the routers from database according to array
-        $result = $this->bbdd->getRowsWhere('routers', $array);
+            //We select the routers from database according to array
+            $query = $this->bbdd->getRowsWhere('routers', $array);
 
-        foreach ($result as $res){
-            echo $res->id;
-            echo "\n";
+            //We save the result into a session
+            $this->session->set_userdata('results', $query);
+
+            $data = array (
+                'url' => base_url(),
+                'results' => $this->session->userdata('results')
+            );
+
+            //We load the view with all results
+            $this->parser->parse('general/results', $data);
+        } else {
+            //We obtain all the results and then the exactly router we're looking for, in $data
+            $array = $this->session->userdata('results');
+
+            //We substract 1 to $id cause arrays starts at 0
+            $id--;
+
+            $data = array (
+                'url' => base_url(),
+                'router' => $array[$id]
+            );
+
+            //We load the view
+            $this->parser->parse('general/router', $data);
         }
-    }
 
-	public function example()
-    {
-        for ($i = 1; $i <= 5; $i++){
-            $result = $this->bbdd->getRowWhereId('test', $i);
-            echo $result->model;
-            echo "\n";
-        }
     }
-
 
    function _output($output){
         $data = array ('url' => base_url());
