@@ -88,7 +88,7 @@ class General extends CI_Controller {
     public function search($id = false)
     {
         if (!$id) {
-            $array = $this->validateForm($_POST);
+            $array = $this->validateForm($_POST); //TODO: change this $_POST for a session call, cause if we go back we lose the search.
 
             //We select the routers from database according to array
             $query = $this->bbdd->getRowsWhere('routers', $array);
@@ -107,12 +107,10 @@ class General extends CI_Controller {
             //We obtain all the results and then the exactly router we're looking for, in $data
             $array = $this->session->userdata('results');
 
-            //We substract 1 to $id cause arrays starts at 0
-            $id--;
-
             $data = array (
                 'url' => base_url(),
-                'router' => $array[$id]
+                'numPic' => $id,
+                'router' => array ('elem' => $array[$id-1]), //We substract 1 to $id cause arrays starts at 0
             );
 
             //We load the view
