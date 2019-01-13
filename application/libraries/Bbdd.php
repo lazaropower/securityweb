@@ -22,6 +22,6 @@ class Bbdd
 
     public function getRowsWhere($table, $array)
     {
-        return $this->CI->db->where($array)->get($table)->result();
+        return $this->CI->db->where($array)->get($table)->result_array();
     }
 }
