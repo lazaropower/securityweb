@@ -5,9 +5,9 @@
 # http://www.sequelpro.com/
 # https://github.com/sequelpro/sequelpro
 #
-# Host: 127.0.0.1 (MySQL 5.5.5-10.3.11-MariaDB)
+# Host: 127.0.0.1 (MySQL 5.5.5-10.1.37-MariaDB)
 # Base de datos: securityweb
-# Tiempo de Generación: 2019-01-06 17:32:22 +0000
+# Tiempo de Generación: 2019-01-13 17:23:39 +0000
 # ************************************************************
 
 
@@ -28,7 +28,7 @@ DROP TABLE IF EXISTS `routers`;
 CREATE TABLE `routers` (
   `id` int(2) unsigned NOT NULL AUTO_INCREMENT,
   `brand` varchar(32) NOT NULL DEFAULT '',
-  `model` varchar(64) DEFAULT NULL,
+  `model` varchar(128) DEFAULT NULL,
   `price` int(11) DEFAULT NULL,
   `numAntennas` int(11) DEFAULT NULL,
   `numLANPorts` int(11) DEFAULT NULL,
@@ -66,7 +66,22 @@ VALUES
 	(20,'Trendnet','AC2600 StreamBoost MU-MIMO WiFi Router (TEW-827DRU)',80,4,4,1,1,0,'dual'),
 	(21,'Jetstream','AC3000 Tri-Band Wi-Fi Gaming Router',110,8,4,0,1,0,'tri'),
 	(22,'Phicomm','K3C AC1900 Dual-Band MU-MIMO Gigabit Router',68,6,3,0,1,0,'dual'),
-	(23,'Razer','Sila',250,9,3,0,1,0,'tri');
+	(23,'Razer','Sila',250,9,3,0,1,0,'tri'),
+	(24,'TP-Link','AC2300 Wireless MU-MIMO Gigabit Router (Archer C2300)',120,3,4,1,1,0,'dual'),
+	(25,'D-Link','AC1750 MU-MIMO Wi-Fi Router (DIR-867)',90,4,4,1,1,0,'dual'),
+	(26,'D-Link','AC1750 Wi-Fi Router DIR-859',80,3,4,0,0,0,'dual'),
+	(27,'Symantec','Norton Core Router',200,4,3,0,1,0,'dual'),
+	(28,'Netgear','Nighthawk X6S AC4000 Tri-Band Gigabit WiFi Router With MU-MIMO (R8000P)',250,6,4,1,1,0,'tri'),
+	(29,'Netgear','NightHawk Pro Gaming XR700',500,4,6,0,1,0,'tri'),
+	(30,'Synology','Router RT2600ac',200,4,4,1,1,0,'dual'),
+	(31,'Portal','Smart Gigabit WiFi Router',380,9,4,0,1,0,'dual'),
+	(32,'D-Link','AC1900 MU-MIMO Wi-Fi Router (DIR-878)',90,4,4,1,1,0,'dual'),
+	(33,'Asus','RT-AC1900P Dual-Band Wireless AC-1900 Gigabit Router',180,3,4,1,0,1,'dual'),
+	(34,'Linksys','E8400 AC2400 Dual-Band Wireless Router',110,4,4,1,0,0,'dual'),
+	(35,'D-Link','AC3150 Ultra Wi-Fi Router (DIR-885L/R)',200,4,4,1,1,0,'dual'),
+	(36,'Amped','Wireless Artemis High Power AC1300 Wi-Fi Router With MU-MIMO (RTA1300M)',100,2,4,1,1,0,'dual'),
+	(37,'Linksys','WRT3200ACM MU-MIMO Gigabit Wi-Fi Router',180,4,4,0,1,1,'dual'),
+	(38,'Synology','Router RT1900ac',120,4,3,1,0,1,'dual');
 
 /*!40000 ALTER TABLE `routers` ENABLE KEYS */;
 UNLOCK TABLES;
