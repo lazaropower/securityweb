@@ -105,6 +105,7 @@ class General extends CI_Controller {
             $this->parser->parse('general/results', $data);
         } else {
             //We obtain all the results and then the exactly router we're looking for, in $data
+            //Called only after search($id=false) has been called and the results have been showed
             $array = $this->session->userdata('results');
 
             $data = array (

@@ -308,7 +308,10 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <p>TODO: Explain briefly what are bands. </p>
+                    <p>A dual-band router hosts both a 2.4Ghz signal (long range, low to medium speed) and a 5Ghz signal (small range, high to very high speed). A tri-band hosts a 2.4Ghz and two 5Ghz signals.
+                        If you’re alone in your home, a tri-band router will not provide a faster connection than a dual-band router.
+                        Only consider buying a Tri-Band router if a lot of devices need a big media stream.
+                    </p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -328,7 +331,9 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <p>TODO. </p>
+                    <p>More antennas on a router correlates with better signal directionality and optimum speeds. Multiple antennas create several streams for sharing data over radio channels, which brings more bandwidth to your devices.But some criterias can have a bigger impact on bandwidth, so the number of antennas shouldn’t be the first thing you look at on a router
+                        Just try to avoid a router with only 2 antennas for a small office or a big house. Keep also in mind that more than 4 antennas are only useful for really specific uses, you probably don’t need it for your house.
+                    </p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -348,7 +353,10 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <p>TODO. </p>
+                    <p>Each LAN Port allows you to connect a device to your router with a wire. Choosing how many LAN Ports you need is up to you.
+                        For a small office we recommend 3 or 4 LAN Ports at least. For a small house 2 should be enough.
+                        Anyway, if you need more ports, you can always add switches to your wired network.
+                    </p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -368,7 +376,9 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <p>TODO. </p>
+                    <p>Such lists let you permit or deny WiFi access to individual devices based on their MAC addresses. For example, if you notice a guest device that is using too much bandwidth, you can deny WiFi access to it without affecting other guest devices. Or, if you want to maintain strict network security, you can allow only devices with known MAC addresses to connect.
+                        It might not be really useful for your home router.
+                    </p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -388,7 +398,9 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <p>TODO. </p>
+                    <p>Multi-User Multiple-Input Multiple-Output is the ability for your router to transmit to several users simultaneously, instead of just one, or to transfer data using multiple data streams at once and thus increase the speed of the transfer. With this transfer method, a wireless router can "talk" to more than one user at a time on a single wireless radio channel or to one user using multiple data streams on the same channel.
+                        It’s a great way to enhance a lot your Wi-Fi experience, so, unless you only have a tiny budget for your router, you should think about picking a router with this functionality.
+                    </p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -408,7 +420,9 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <p>TODO. </p>
+                    <p>Remote Authentication Dial-In User Service is a networking protocol that provides centralized Authentication, Authorization, and Accounting via user accounts.
+                        It’s a must-have for a small office or for a connected home, but you probably don’t need it for your “standard” home.
+                    </p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
