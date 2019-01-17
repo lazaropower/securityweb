@@ -9,6 +9,7 @@
 
 <div class="head-box text-center mb-5">
     <h3>Click to see more details</h3>
+    <a href="{url}general" class="btn btn-primary">Go Home</a>
     <h6 class="text-underline-primary"></h6>
 </div>
 
@@ -28,7 +29,7 @@
         <td>{brand}</td>
         <td>{model}</td>
         <td>
-            <a href="<? $url = base_url(); echo $url?>general/search/{id}" class="btn btn-warning">See more</a>
+            <a href="<? $url = base_url(); echo $url?>general/search/details/{id}" class="btn btn-warning">See more</a> <!-- TODO: ID change -->
         </td>
     </tr>
     {/results}

@@ -17,7 +17,7 @@ class Bbdd
 
     public function getRowWhereId($table, $id)
     {
-        return $this->CI->db->where('id', $id)->get($table)->row();
+        return $this->CI->db->where('id', $id)->get($table)->result();
     }
 
     public function getRowsWhere($table, $array)

@@ -1,5 +1,6 @@
 <div class="head-box text-center mb-5">
     <h2>{router}{brand} {model}{/router}</h2>
+    <a href="{url}general" class="btn btn-primary">Go home</a> <a href="{url}general/search/results/-1" class="btn btn-secondary">Go back</a>
     <h6 class="text-underline-primary"></h6>
 </div>
 

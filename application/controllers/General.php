@@ -41,9 +41,11 @@ class General extends CI_Controller {
        }
     }
 
-    private function validateForm($form)
+    private function validateForm()
     {
         //We obtain the data from the form and validate it
+        $form = $this->session->userdata('form');
+
         if (empty($form['max-price'])) //No max price entered
             $maxPrice = 400;
         else $maxPrice = $form['max-price'];
@@ -82,19 +84,23 @@ class General extends CI_Controller {
             'radius >=' => $radius
         );
 
-        return $array;
+        $this->session->set_userdata('array', $array);
     }
 
-    public function search($id = false)
+    public function search($option = false, $id = false)
     {
-        if (!$id) {
-            $array = $this->validateForm($_POST); //TODO: change this $_POST for a session call, cause if we go back we lose the search.
+        if ($option == 'results'){
+            if (!$id) { //First time
+                //We save the $_POST into a session and validate it only once
+                $this->session->set_userdata('form', $_POST);
+                $this->validateForm();
 
-            //We select the routers from database according to array
-            $query = $this->bbdd->getRowsWhere('routers', $array);
+                //We select the routers from database according to array
+                $query = $this->bbdd->getRowsWhere('routers', $this->session->userdata('array'));
 
-            //We save the result into a session
-            $this->session->set_userdata('results', $query);
+                //We save the result into a session
+                $this->session->set_userdata('results', $query);
+            }
 
             $data = array (
                 'url' => base_url(),
@@ -103,21 +109,17 @@ class General extends CI_Controller {
 
             //We load the view with all results
             $this->parser->parse('general/results', $data);
-        } else {
-            //We obtain all the results and then the exactly router we're looking for, in $data
-            //Called only after search($id=false) has been called and the results have been showed
-            $array = $this->session->userdata('results');
-
+        } else if ($option == 'details'){
+            $router = $this->bbdd->getRowWhereId('routers', $id);
             $data = array (
                 'url' => base_url(),
                 'numPic' => $id,
-                'router' => array ('elem' => $array[$id-1]), //We substract 1 to $id cause arrays starts at 0
+                'router' => $router
             );
 
             //We load the view
             $this->parser->parse('general/router', $data);
         }
-
     }
 
    function _output($output){

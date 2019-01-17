@@ -98,7 +98,7 @@
             <h6 class="text-underline-primary">Take the survey</h6>
         </div>
         <!-- Form for entering router features -->
-        <form id="router-form" action="{url}general/search" method="POST">
+        <form id="router-form" action="{url}general/search/results" method="POST">
 
             <!-- Price (number input. TODO: convert to sliding control, elegant and no need to check the format) -->
             <div class="form-group">
@@ -109,27 +109,6 @@
                     More info
                 </button>
             </div>
-
-            <!-- Brand (9 options) -->
-            <!-- <div class="form-group">
-                <h5 class="form-text" for="model">Brand</h5>
-                <select class="form-control" name="brandSelect">
-                    <option disabled selected hidden>Select the brand</option>
-                    <option>Asus</option>
-                    <option>Netgear</option>
-                    <option>D-Link</option>
-                    <option>TP-Link</option>
-                    <option>Linksys</option>
-                    <option>Trendnet</option>
-                    <option>Jetstream</option>
-                    <option>Phicomm</option>
-                    <otion>Razer</otion>
-                </select><br>
-                Button trigger modal
-                <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#brandsModal">
-                    More info
-                </button>
-            </div> TODO: Change to select between 0-9 options instead of select only one -->
 
             <!-- Bands (3 options) -->
             <div class="form-group">
