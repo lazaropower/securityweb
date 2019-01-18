@@ -90,25 +90,35 @@ class General extends CI_Controller {
     public function search($option = false, $id = false)
     {
         if ($option == 'results'){
-            if (!$id) { //First time
-                //We save the $_POST into a session and validate it only once
-                $this->session->set_userdata('form', $_POST);
-                $this->validateForm();
+            if (isset($_POST['MAC_ACL'])) { //First time of the form
+                if (!$id) { //First time
+                    //We save the $_POST into a session and validate it only once
+                    $this->session->set_userdata('form', $_POST);
+                    $this->validateForm();
 
-                //We select the routers from database according to array
-                $query = $this->bbdd->getRowsWhere('routers', $this->session->userdata('array'));
+                    //We select the routers from database according to array
+                    $query = $this->bbdd->getRowsWhere('routers', $this->session->userdata('array'));
 
-                //We save the result into a session
-                $this->session->set_userdata('results', $query);
+                    //We save the result into a session
+                    $this->session->set_userdata('results', $query);
+                }
+
+                $data = array (
+                    'url' => base_url(),
+                    'results' => $this->session->userdata('results')
+                );
+
+                //We load the view with all results
+                $this->parser->parse('general/results', $data);
+            } else { //If the user tries to reload the page
+                $data = array (
+                    'url' => base_url(),
+                    'results' => $this->session->userdata('results')
+                );
+
+                $this->parser->parse('general/results', $data);
             }
 
-            $data = array (
-                'url' => base_url(),
-                'results' => $this->session->userdata('results')
-            );
-
-            //We load the view with all results
-            $this->parser->parse('general/results', $data);
         } else if ($option == 'details'){
             $router = $this->bbdd->getRowWhereId('routers', $id);
             $data = array (
