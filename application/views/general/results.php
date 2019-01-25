@@ -29,7 +29,7 @@
         <td>{brand}</td>
         <td>{model}</td>
         <td>
-            <a href="<? $url = base_url(); echo $url?>general/search/details/{id}" class="btn btn-warning">See more</a> <!-- TODO: ID change -->
+           <a href="<?php $url = base_url(); echo $url?>general/search/details/{id}" class="btn btn-warning">See more</a>
         </td>
     </tr>
     {/results}
