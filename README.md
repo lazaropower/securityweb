@@ -15,7 +15,7 @@ This are the components of the practical group:
 | Name  | Student ID |
 | ------------- | ------------- |
 | Lázaro Amor  | 902763  |
-| Ángel del Castillo las Heras  | Number here  |
+| Ángel del Castillo las Heras  | 902697  |
 | Thomas Bobillot | 902766 |
 
 ##### Winter Semester 2018/2019 - [University of Technology](https://www.p.lodz.pl/pl), Łódź
